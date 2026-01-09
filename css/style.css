@@ -93,6 +93,8 @@ section {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
 
+
+
 .hamburger {
     display: none;
     font-size: 28px;
@@ -109,15 +111,24 @@ section {
     }
 
     header {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         gap: 10px;
     }
 
+    .hamburger {
+        display: block;
+        font-size: 28px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
     nav {
         position: absolute;
-        top: 70px;
-        left: 0;
+        top: 60px;
+        right: 0;
         width: 100%;
         background: rgba(255, 255, 255, 0.55);
         display: none;
@@ -130,8 +141,8 @@ section {
     nav ul {
         display: none;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
+        align-items: flex-end;
+        padding: 18px;
         gap: 12px;
     }
 
@@ -139,14 +150,16 @@ section {
         display: flex;
     }
 
-}
-
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-        font-size: 28px;
-        background: none;
-        border: none;
-        cursor: pointer;
+    nav ul li {
+        width: 100%;
+        text-align: end;
     }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        text-align: right;
+    }
+
 }
