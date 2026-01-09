@@ -119,10 +119,9 @@ section {
     }
 
     nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-        align-items: center;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
         gap: 12px;
     }
 
