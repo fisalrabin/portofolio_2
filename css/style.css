@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 5px;
+    padding: 0;
 }
 
 html {
@@ -9,8 +9,9 @@ html {
 }
 
 header {
+    display: flex;
     border-bottom: 1px solid black;
-    padding: 1px;
+    padding: 10px;
     gap: 2px;
 }
 
@@ -26,6 +27,12 @@ nav ul {
     justify-content: end;
     color: blue;
     gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: 500;
 }
 
 body {
@@ -87,5 +94,17 @@ section {
     .profile-img {
         width: 220px;
         margin-bottom: 24px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
     }
 }
