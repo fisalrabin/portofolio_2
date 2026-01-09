@@ -93,7 +93,35 @@ section {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
 
+.project {
+    padding: 24px;
+    margin: 36px;
+    border-radius: 36px;
+}
 
+.project p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.image-galleryfigure {
+    margin: 0;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
 
 .hamburger {
     display: none;
@@ -160,6 +188,10 @@ section {
         width: 100%;
         padding: 10px 0;
         text-align: right;
+    }
+
+    .image-gallery {
+        gap: 1.25rem;
     }
 
 }
