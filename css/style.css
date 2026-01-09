@@ -121,7 +121,7 @@ section {
     nav ul {
         display: none;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         gap: 12px;
     }
