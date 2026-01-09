@@ -126,7 +126,7 @@ section {
         left: 0;
         width: 100%;
         background: rgba(255, 255, 255, 0.55);
-        display: none;
+        display: flex;
     }
 
     nav.active {
