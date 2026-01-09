@@ -120,9 +120,9 @@ section {
 
     nav ul {
         display: none;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
         gap: 12px;
     }
 
